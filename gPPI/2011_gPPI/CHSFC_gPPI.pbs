@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=24
+#PBS -q long
+#PBS -N DW_g
+#PBS -V 
+
+cd /brain/iCAN/home/xiongbingsen/SPM/spm12_scripts/gPPI/DSTWM
+
+PATH=/opt/software/MATLAB/R2012a/bin/:$PATH
+matlab -nojvm -r "addpath('/brain/iCAN/home/xiongbingsen/SPM/spm8'); clear classes; CHSFC_gPPI('CHSFC_gPPI_config.m')"
+
