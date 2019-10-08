@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N DW_ind
+#PBS -l nodes=1:ppn=24
+#PBS -q short
+
+cd /brain/iCAN/home/xiongbingsen/SPM/spm12_scripts/IndividualStats/DSTWM
+
+matlab -r "DSTWM_IndividualStats"
